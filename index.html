@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Note Application</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 Quick Notes</h1>
+
+        <textarea
+            id="noteInput"
+            placeholder="Write your note here..."
+        ></textarea>
+
+        <button onclick="saveNote()">Save Note</button>
+
+        <h2>Saved Notes</h2>
+
+        <div id="notesContainer">
+            <p>No notes yet.</p>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
